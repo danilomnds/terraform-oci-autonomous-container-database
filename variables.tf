@@ -193,15 +193,10 @@ variable "rotate_key_trigger" {
 
 variable "groups" {
   type    = list(string)
-  default = null
+  default = []
 }
 
 variable "compartment" {
   type    = string
   default = null
-}
-
-variable "enable_group_access" {
-  type    = bool
-  default = true
 }
