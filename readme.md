@@ -101,9 +101,8 @@ output "autonomous-container-database-id" {
 | version_preference | The next maintenance version preference | `string` | n/a | No |
 | vm_failover_reservation | The percentage of CPUs to reserve for a single node Autonomous Database, in increments of 25 | `string` | n/a | No |
 | rotate_key_trigger | (Optional) (Updatable) An optional property when flipped triggers rotation of KMS key |
-| groups | list of azure AD groups that will manage objects inside the bucket | `list(string)` | n/a | No |
+| groups | list of azure AD groups that will manage objects inside the bucket | `list(string)` | `[]` | No |
 | compartment | compartment name that will be used for policy creation | `string` | n/a | No |
-| enable_group_access | enables the policy creation. If true the groups var should have a least one value | `bool` | `true` | No |
 
 # Object variables for blocks
 
